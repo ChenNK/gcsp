@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gcsp-lib-common" />
+        <module name="gcsp-service" />
+        <module name="gcsp-service-impl" />
+        <module name="gcsp-webapp" />
+        <module name="zwy-lib-common" />
+        <module name="zwy-service" />
+        <module name="zwy-service-impl" />
+        <module name="zwy-web" />
+        <module name="zwy-webapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gcsp" target="1.7" />
+      <module name="gcsp-lib-common" target="1.7" />
+      <module name="gcsp-service" target="1.7" />
+      <module name="gcsp-service-impl" target="1.7" />
+      <module name="gcsp-webapp" target="1.7" />
+      <module name="zwy" target="1.7" />
+      <module name="zwy-lib-common" target="1.7" />
+      <module name="zwy-service" target="1.7" />
+      <module name="zwy-service-impl" target="1.7" />
+      <module name="zwy-web" target="1.7" />
+      <module name="zwy-webapp" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

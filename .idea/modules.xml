@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gcsp.iml" filepath="$PROJECT_DIR$/gcsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcsp-lib-common/gcsp-lib-common.iml" filepath="$PROJECT_DIR$/gcsp-lib-common/gcsp-lib-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcsp-service/gcsp-service.iml" filepath="$PROJECT_DIR$/gcsp-service/gcsp-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcsp-service-impl/gcsp-service-impl.iml" filepath="$PROJECT_DIR$/gcsp-service-impl/gcsp-service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcsp-web/zwy-webapp.iml" filepath="$PROJECT_DIR$/gcsp-web/zwy-webapp.iml" />
+    </modules>
+  </component>
+</project>
