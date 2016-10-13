@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="zwy-webapp:war">
-    <output-path>$PROJECT_DIR$/gcsp-web/target</output-path>
-    <root id="archive" name="zwy-webapp.war">
-      <element id="artifact" artifact-name="zwy-webapp:war exploded" />
-    </root>
-  </artifact>
-</component>

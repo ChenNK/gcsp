@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gcsp-web:war">
+    <output-path>$PROJECT_DIR$/gcsp-web/target</output-path>
+    <root id="archive" name="gcsp-web.war">
+      <element id="artifact" artifact-name="gcsp-web:war exploded" />
+    </root>
+  </artifact>
+</component>

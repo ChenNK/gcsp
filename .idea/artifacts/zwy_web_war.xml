@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="zwy-web:war">
-    <output-path>$PROJECT_DIR$/zwy-web/target</output-path>
-    <root id="archive" name="zwy-webapp.war">
-      <element id="artifact" artifact-name="zwy-web:war exploded" />
-    </root>
-  </artifact>
-</component>

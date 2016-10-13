@@ -1,22 +1,26 @@
 package com.nbzwy.domain.po;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.PersistenceConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by ` on 2016/10/10.
  */
-@Document
 public class Element {
-    @Id
-    private Long id;
+
+    private String id;
     private String type;
     private String name;
     private String val;
     private String describe;
+    private String unit;
+    private long length;
+    private SliderOption sliderOption;
+    private Map<String, Object> val_radio;
+    private Map<String, Object> val_tree;
+    private List<ElementOption> elementOptionList;
+    private List<ElementTree> elementTreeData;
     private int elementOrder;
     private String displayCheckField;
     private String displayCheckValue;
@@ -25,24 +29,37 @@ public class Element {
     public Element() {
     }
 
-    @PersistenceConstructor
-    public Element(Long id, String type, String name, String val, String describe, int elementOrder, String displayCheckField, String displayCheckValue, Date createTime) {
+    public Element(String id, String type, String name, String val, String describe, String unit, long length, SliderOption sliderOption, Map<String, Object> val_radio, Map<String, Object> val_tree, List<ElementOption> elementOptionList, List<ElementTree> elementTreeData, int elementOrder, String displayCheckField, String displayCheckValue, Date createTime) {
         this.id = id;
         this.type = type;
         this.name = name;
         this.val = val;
         this.describe = describe;
+        this.unit = unit;
+        this.length = length;
+        this.sliderOption = sliderOption;
+        this.val_radio = val_radio;
+        this.val_tree = val_tree;
+        this.elementOptionList = elementOptionList;
+        this.elementTreeData = elementTreeData;
         this.elementOrder = elementOrder;
         this.displayCheckField = displayCheckField;
         this.displayCheckValue = displayCheckValue;
         this.createTime = createTime;
     }
 
-    public Element(String type, String name, String val, String describe, int elementOrder, String displayCheckField, String displayCheckValue, Date createTime) {
+    public Element(String type, String name, String val, String describe, String unit, long length, SliderOption sliderOption, Map<String, Object> val_radio, Map<String, Object> val_tree, List<ElementOption> elementOptionList, List<ElementTree> elementTreeData, int elementOrder, String displayCheckField, String displayCheckValue, Date createTime) {
         this.type = type;
         this.name = name;
         this.val = val;
         this.describe = describe;
+        this.unit = unit;
+        this.length = length;
+        this.sliderOption = sliderOption;
+        this.val_radio = val_radio;
+        this.val_tree = val_tree;
+        this.elementOptionList = elementOptionList;
+        this.elementTreeData = elementTreeData;
         this.elementOrder = elementOrder;
         this.displayCheckField = displayCheckField;
         this.displayCheckValue = displayCheckValue;
@@ -52,11 +69,18 @@ public class Element {
     @Override
     public String toString() {
         return "Element{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", type='" + type + '\'' +
                 ", name='" + name + '\'' +
                 ", val='" + val + '\'' +
                 ", describe='" + describe + '\'' +
+                ", unit='" + unit + '\'' +
+                ", length=" + length +
+                ", sliderOption=" + sliderOption +
+                ", val_radio=" + val_radio +
+                ", val_tree=" + val_tree +
+                ", elementOptionList=" + elementOptionList +
+                ", elementTreeData=" + elementTreeData +
                 ", elementOrder=" + elementOrder +
                 ", displayCheckField='" + displayCheckField + '\'' +
                 ", displayCheckValue='" + displayCheckValue + '\'' +
@@ -64,11 +88,11 @@ public class Element {
                 '}';
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -96,12 +120,68 @@ public class Element {
         this.val = val;
     }
 
-    public String getdescribe() {
+    public String getDescribe() {
         return describe;
     }
 
-    public void setdescribe(String describe) {
+    public void setDescribe(String describe) {
         this.describe = describe;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public long getLength() {
+        return length;
+    }
+
+    public void setLength(long length) {
+        this.length = length;
+    }
+
+    public Map<String, Object> getVal_radio() {
+        return val_radio;
+    }
+
+    public void setVal_radio(Map<String, Object> val_radio) {
+        this.val_radio = val_radio;
+    }
+
+    public Map<String, Object> getVal_tree() {
+        return val_tree;
+    }
+
+    public void setVal_tree(Map<String, Object> val_tree) {
+        this.val_tree = val_tree;
+    }
+
+    public SliderOption getSliderOption() {
+        return sliderOption;
+    }
+
+    public void setSliderOption(SliderOption sliderOption) {
+        this.sliderOption = sliderOption;
+    }
+
+    public List<ElementOption> getElementOptionList() {
+        return elementOptionList;
+    }
+
+    public void setElementOptionList(List<ElementOption> elementOptionList) {
+        this.elementOptionList = elementOptionList;
+    }
+
+    public List<ElementTree> getElementTreeData() {
+        return elementTreeData;
+    }
+
+    public void setElementTreeData(List<ElementTree> elementTreeData) {
+        this.elementTreeData = elementTreeData;
     }
 
     public int getElementOrder() {

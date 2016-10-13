@@ -2,12 +2,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>gcsp-parent</artifactId>
-        <groupId>com.chen.zwy</groupId>
+        <groupId>com.nbzwy</groupId>
         <version>1.0.1_Alpha</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>zwy-webapp</artifactId>
+    <artifactId>gcsp-web</artifactId>
     <packaging>war</packaging>
+
     <name>zwy-webapp Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
@@ -26,13 +27,13 @@
 
         <dependency>
             <artifactId>gcsp-lib-common</artifactId>
-            <groupId>com.chen.zwy</groupId>
+            <groupId>com.nbzwy</groupId>
             <version>${lib.common.version}</version>
         </dependency>
 
         <dependency>
             <artifactId>gcsp-service-impl</artifactId>
-            <groupId>com.chen.zwy</groupId>
+            <groupId>com.nbzwy</groupId>
             <version>${service.impl.version}</version>
         </dependency>
 
@@ -235,6 +236,45 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+        </dependency>
+        <!--java连接mongoDB的驱动jar包 -->
+        <!--<dependency>-->
+            <!--<groupId>org.mongodb</groupId>-->
+            <!--<artifactId>mongodb-driver</artifactId>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.data</groupId>-->
+            <!--<artifactId>spring-data-jpa</artifactId>-->
+        <!--</dependency>-->
+
+        <!-- hibernate  -->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-core</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-entitymanager</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate.javax.persistence</groupId>-->
+            <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate.common</groupId>-->
+            <!--<artifactId>hibernate-commons-annotations</artifactId>-->
+        <!--</dependency>-->
+
+
 
         <!-- aop -->
         <dependency>

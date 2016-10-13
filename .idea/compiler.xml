@@ -25,6 +25,7 @@
         <module name="gcsp-lib-common" />
         <module name="gcsp-service" />
         <module name="gcsp-service-impl" />
+        <module name="gcsp-web" />
         <module name="gcsp-webapp" />
         <module name="zwy-lib-common" />
         <module name="zwy-service" />
@@ -38,6 +39,7 @@
       <module name="gcsp-lib-common" target="1.7" />
       <module name="gcsp-service" target="1.7" />
       <module name="gcsp-service-impl" target="1.7" />
+      <module name="gcsp-web" target="1.7" />
       <module name="gcsp-webapp" target="1.7" />
       <module name="zwy" target="1.7" />
       <module name="zwy-lib-common" target="1.7" />

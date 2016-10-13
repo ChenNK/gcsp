@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.chen.zwy</groupId>
+    <groupId>com.nbzwy</groupId>
     <artifactId>gcsp-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.1_Alpha</version>
@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
         <lib.common.version>1.0.0-aux</lib.common.version>
         <service.version>1.0.0-aux</service.version>
     </properties>
@@ -45,7 +45,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.11</version>
+                <version>4.12</version>
             </dependency>
             <!--控制日志信息输送的目的地是控制台、文件、GUI组件、甚至是套接口服务器 -->
             <dependency>
@@ -150,12 +150,7 @@
                 <artifactId>commons-io</artifactId>
                 <version>2.0.1</version>
             </dependency>
-            <!--java连接mongoDB的驱动jar包 -->
-            <dependency>
-                <groupId>org.mongodb</groupId>
-                <artifactId>mongo-java-driver</artifactId>
-                <version>2.10.1</version>
-            </dependency>
+
             <!--一个消息中间件 -->
             <dependency>
                 <groupId>org.apache.qpid</groupId>
@@ -212,12 +207,16 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jms</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.springframework.data</groupId>-->
+                <!--<artifactId>spring-data-jpa</artifactId>-->
+                <!--<version>1.9.6.RELEASE</version>-->
+            <!--</dependency>-->
 
             <!-- aop -->
             <dependency>
@@ -238,11 +237,45 @@
                 <artifactId>spring-data-mongodb</artifactId>
                 <version>1.9.4.RELEASE</version>
             </dependency>
+            <!--java连接mongoDB的驱动jar包 -->
+            <!--<dependency>-->
+                <!--<groupId>org.mongodb</groupId>-->
+                <!--<artifactId>mongodb-driver</artifactId>-->
+                <!--<version>3.0.4</version>-->
+            <!--</dependency>-->
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>2.13.0</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>1.0.15</version>
             </dependency>
+
+            <!-- hibernate  -->
+            <!--<dependency>-->
+                <!--<groupId>org.hibernate</groupId>-->
+                <!--<artifactId>hibernate-core</artifactId>-->
+                <!--<version>5.2.3.Final</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.hibernate</groupId>-->
+                <!--<artifactId>hibernate-entitymanager</artifactId>-->
+                <!--<version>5.2.3.Final</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.hibernate.javax.persistence</groupId>-->
+                <!--<artifactId>hibernate-jpa-2.0-api</artifactId>-->
+                <!--<version>1.0.1.Final</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.hibernate.common</groupId>-->
+                <!--<artifactId>hibernate-commons-annotations</artifactId>-->
+                <!--<version>5.0.1.Final</version>-->
+            <!--</dependency>-->
+
 
             <!-- jdbc driver -->
             <dependency>
