@@ -70,9 +70,9 @@ public class ComponentController {
      * @param componentDTO 修改的构件对象, 需要有id
      * @return
      */
-    @RequestMapping(value = "/component/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/component", method = RequestMethod.PUT)
     public @ResponseBody
-    ResultDO<String> updateComponent( ComponentDTO componentDTO){
+    ResultDO<String> updateComponent(@RequestBody ComponentDTO componentDTO){
         System.out.println(componentDTO.toString());
         return componentService.updateComponent(componentDTO);
     }
