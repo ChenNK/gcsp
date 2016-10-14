@@ -74,7 +74,7 @@ public class ComponentServiceImpl implements ComponentService {
                 result.setErrMsg("查询构件成功!");
             } else {
                 result.setRetCode(1);
-                result.setErrMsg("查询构件失败!");
+                result.setErrMsg("查询构件失败, id 不存在!");
             }
         } catch (Exception e) {
             result.setRetCode(1);
@@ -116,10 +116,15 @@ public class ComponentServiceImpl implements ComponentService {
             if (componentDTO != null) {
                 BeanCopierUtil.copyProperties(componentDTO, component);
             }
-            Component com = repository.save(component);
-            result.setModule(com.getId());
-            result.setRetCode(0);
-            result.setErrMsg("修改构件成功!");
+            if (component.getId() != null) {
+                Component com = repository.save(component);
+                result.setModule(com.getId());
+                result.setRetCode(0);
+                result.setErrMsg("修改构件成功!");
+            } else {
+                result.setRetCode(1);
+                result.setErrMsg("修改构件失败, id 不能为空!");
+            }
         } catch (Exception e) {
             result.setRetCode(1);
             result.setErrMsg("修改构件异常!");
